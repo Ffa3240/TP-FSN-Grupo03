@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clsHeader {
+    width: 1440px;
+    height: 144px;
+    background-color: #30343F;
+    display: flex;
+    flex-direction: row;
+}
+
+    .clsLogo {
+        width: 50%;
+        margin-left: 110px;
+        margin-top: 39px;
+
+    }
+
+    .clsMenu {
+        width: 50%;
+        color: white;
+        font-size: 20px;
+    }
+        .clsMenu > ul > li {
+            text-decoration: none;
+        }
+
+
+
