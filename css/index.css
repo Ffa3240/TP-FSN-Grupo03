@@ -1,6 +1,30 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+/* EXTERNALS */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css');
 
 
+/* MISCELANEOUS */
+@import url('/css/misc/normalize.css');
+@import url('/css/misc/variables.css');
+@import url('/css/misc/helpers.css');
+@import url('./misc/animations.css');
+
+
+/* PARTIALS */
+
+@import url('./partials/header.css');
+@import url('./partials/footer.css');
+
+
+/* COMPONENTS */
+
+@import url('/css/components/cards.css');
+@import url('./components/slider.css');
+
+
+/* PAGES */
+
+@import url('/css/pages/item.css');
+@import url('/css/pages/home.css');
