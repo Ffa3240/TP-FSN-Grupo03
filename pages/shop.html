@@ -12,58 +12,71 @@
     </header>
 
     <!--Inicio Barra Lateral-->
-    <aside>
-        <form action="../pages/shop.html" method="">
-            <label for="search">BUSCAR</label>
+    <main id="shop" class="container">
+    <aside class="shop__filters filters">
+        <div class="filters__search">
+            <label class="filters__title" for="search">BUSCAR</label>
             <input type="text" placeholder="item o categoria" name="search" id="search">
-        </form>
-        <form action="">
-            <label for="ordenar">ORDENAR POR</label>
-            <select name="ordenar" id="ordenar">
-                <option value="opcion1">opcion1</option>
-                <option value="opcion2">opcion2</option>
-                <option value="opcion3">opcion3</option>
-                <option value="opcion4">opcion4</option>
+        </div>
+        <div class="filters__order">
+            <label class="filters__title" for="orderby">ORDENAR POR</label>
+            <select name="orderby" id="orderby">
+                <option value="az">A-Z</option>
+                <option value="za">Z-A</option>
+                <option value="desc">Mayor precio</option>
+                <option value="asc">Menos precio</option>
             </select>
-        </form>
-        <form action="">
-            <label for="precio">PRECIO</label>
-            <label for="min">MIN</label>
-            <input type="number" name="min" id="min">
-            <label for="min">MAX</label>
-            <input type="number" name="max" id="max">
-        </form>
-        <form action="">
-            <label for="">FILTRAR</label>
-            <input type="checkbox" name="Nuevos" id="Nuevos">
-            <label for="">NUEVOS</label>
-            <input type="checkbox" name="oferta" id="oferta">
-            <label for="">OFERTA</label>
-            <input type="checkbox" name="edicion especial" id="edicion especial">
-            <label for="">EDICION ESPECIAL</label>
-            <input type="checkbox" name="favoritos" id="favoritos">
-            <label for="">FAVORITOS</label>
-        </form>
+        </div>
+        <div class="filters__price">
+            <span class="filters__title">PRECIO</span>
+            <div>
+                <label for="min">MIN</label>
+                <input type="text" name="min" id="min" placeholder="0">
+                <label for="max">MAX</label>
+                <input type="text" name="max" id="max" placeholder="0">
+            </div>
+        </div>
+        <div>
+            <span class="filters__title">FILTRAR</span>
+            <div>
+                <input type="checkbox" name="filter" id="news" value="news">
+                <label>NUEVOS</label>
+            </div>
+            <div>
+                <input type="checkbox" name="filter" id="offers" value="offers">
+                <label>OFERTAS</label>
+            </div>
+            <div>
+                <input type="checkbox" name="filter" id="specials" value="specials">
+                <label>EDICIÓN ESPECIAL</label>
+            </div>
+            <div>
+                <input type="checkbox" name="filter" id="favs" value="favs">
+                <label>FAVORITOS</label>
+            </div>
+        </div>
     </aside> <!--Fin Barra Lateral-->
 
     <!--Inicio del main-->
-    <main>
+    
         <!--Bloque 1-->
-        <section>
-            <ul>
+        <section class="shop__content">
+            <ul class="shop__items">
                 <!--Articulo 1-->
-                <li> 
-                    <article>
-                        <a href="">
-                        <picture>
-                            <img src="../img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper ">
-                        </picture>
-                        <div> 
-                            <p>STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
+                <li class="shop__item"> 
+                    <article class="card__item">
+                        <a class="card-item__link" href="">
+                            <picture class="card-item__cover">
+                                <span class="card-item__tag">NUEVO</span>
+                                <img class="card-item__img--front" src="https://res.cloudinary.com/db6uriqjm/image/upload/v1693183851/Codo%20a%20Codo/star%20wars/baby-yoda-1_k3cwfc.webp" alt="Figura coleccionable Funko de Grogu">
+                                <img class="card-item__img--back" src="https://res.cloudinary.com/db6uriqjm/image/upload/v1693183851/Codo%20a%20Codo/star%20wars/baby-yoda-box_yi5rer.webp" alt="Figura coleccionable Funko de Grogu en caja">
+                            </picture>
+                            <div class="card-item__content"> 
+                                <p class="card-item__licence">Star Wars</p>
+                                <h4 class="card-item__name">Baby Yoda Blueball</h4>
+                                <p class="card-item__price">$ 1799,99</p>
+                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                            </div>
                         </a>
                     </article>
                 </li>
@@ -103,9 +116,9 @@
         </section> 
 
         <!--Bloque 2-->
-        <section>
+        <!--<section>
             <ul>
-                <!--Articulo 1-->
+                <!--Articulo 1
                 <li> 
                     <article>
                         <a href="">
@@ -121,7 +134,7 @@
                         </a>
                     </article>
                 </li>
-                <!--Articulo 2-->
+                Articulo 2
                 <li>
                     <article>
                         <a href="">
@@ -137,7 +150,7 @@
                             </a>
                     </article>
                 </li>
-                <!--Articulo 3-->
+                Articulo 3
                 <li>
                     <article>
                         <a href="">
@@ -156,10 +169,10 @@
             </ul>
         </section> 
 
-        <!--Bloque 3-->
+        Bloque 3
         <section>
             <ul>
-                <!--Articulo 1-->
+                Articulo 1
                 <li> 
                     <article>
                         <a href="">
@@ -175,7 +188,7 @@
                         </a>
                     </article>
                 </li>
-                <!--Articulo 2-->
+                Articulo 2
                 <li>
                     <article>
                         <a href="">
@@ -191,7 +204,7 @@
                             </a>
                     </article>
                 </li>
-                <!--Articulo 3-->
+                Articulo 3
                 <li>
                     <article>
                         <a href="">
@@ -208,7 +221,7 @@
                     </article>
                 </li>
             </ul>
-        </section> 
+        </section> -->
     </main> <!--Fin del main-->
 
     <!--Inicio Paginación-->
