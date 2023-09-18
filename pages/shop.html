@@ -12,204 +12,60 @@
     </header>
 
     <!--Inicio Barra Lateral-->
-    <aside>
-        <form action="../pages/shop.html" method="">
-            <label for="search">BUSCAR</label>
-            <input type="text" placeholder="item o categoria" name="search" id="search">
-        </form>
-        <form action="">
-            <label for="ordenar">ORDENAR POR</label>
+    <main id="shop" class="container">  
+    <aside class="shop__filters filters">
+        <div class="filters__search"> 
+            <label class="filters__title" for="search">BUSCAR</label>
+            <input type="text" name="search" id="search" placeholder="item o categoria">
+        </div>
+        <div class="filters__order"> 
+        <label class="filters__title" for="ordenar">ORDENAR POR</label>
             <select name="ordenar" id="ordenar">
-                <option value="opcion1">opcion1</option>
-                <option value="opcion2">opcion2</option>
-                <option value="opcion3">opcion3</option>
-                <option value="opcion4">opcion4</option>
+                <option value="az">A-Z</option>
+                <option value="za">Z-A</option>
+                <option value="desc">Mayor precio</option>
+                <option value="asc">Menor precio</option>
             </select>
-        </form>
-        <form action="">
-            <label for="precio">PRECIO</label>
+        <div class="filters__price">
+            <span class="filters__title">PRECIO</span>
+            <div> 
             <label for="min">MIN</label>
-            <input type="number" name="min" id="min">
-            <label for="min">MAX</label>
-            <input type="number" name="max" id="max">
-        </form>
-        <form action="">
-            <label for="">FILTRAR</label>
-            <input type="checkbox" name="Nuevos" id="Nuevos">
-            <label for="">NUEVOS</label>
-            <input type="checkbox" name="oferta" id="oferta">
-            <label for="">OFERTA</label>
-            <input type="checkbox" name="edicion especial" id="edicion especial">
-            <label for="">EDICION ESPECIAL</label>
-            <input type="checkbox" name="favoritos" id="favoritos">
-            <label for="">FAVORITOS</label>
-        </form>
+            <input type="text" name="min" id="min" placeholder="0">
+            <label for="max">MAX</label>
+            <input type="text" name="max" id="max" placeholder="0">
+            </div>
+        </div>
+        <div class="filters__checks">
+            <span class="filters__title" for="filter">FILTRAR</span>
+            <div> 
+            <input type="checkbox" name="filter" id="news" value="news">
+            <label for>NUEVOS</label>
+            </div>
+            <div> 
+            <input type="checkbox" name="filter" id="offers" value="offers">
+            <label for>OFERTA</label>
+            </div>
+            <div> 
+            <input type="checkbox" name="filter" id="specials" value="specials">
+            <label for>EDICION ESPECIAL</label>
+            </div>
+            <div> 
+            <input type="checkbox" name="filter" id="favs" value="favs">
+            <label for>FAVORITOS</label>
+            </div>
+        </div>
     </aside> <!--Fin Barra Lateral-->
 
-    <!--Inicio del main-->
-    <main>
-        <!--Bloque 1-->
-        <section>
-            <ul>
-                <!--Articulo 1-->
-                <li> 
-                    <article>
-                        <a href="">
-                        <picture>
-                            <img src="../img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper ">
-                        </picture>
-                        <div> 
-                            <p>STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                        </a>
-                    </article>
-                </li>
-                <!--Articulo 2-->
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto de Pokemon ">
-                            </picture>
-                            <div> 
-                                <p>POKEMON</p>
-                                <h4>PIDGEOTTO</h4>
-                                <p>$ 1799,99</p>
-                                <p>3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                            </a>
-                    </article>
-                </li>
-                <!--Articulo 3-->
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="../img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna LOVEGOOD">
-                            </picture>
-                            <div> 
-                                <p>HARRY POTTER</p>
-                                <h4>LUNA LOVEGOOD LION MASK</h4>
-                                <p>$ 1799,99</p>
-                                <p>3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                            </a>
-                    </article>
-                </li>
-            </ul>
-        </section> 
+    <!--Bloque 1-->
+   
 
-        <!--Bloque 2-->
-        <section>
-            <ul>
-                <!--Articulo 1-->
-                <li> 
-                    <article>
-                        <a href="">
-                        <picture>
-                            <img src="../img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper ">
-                        </picture>
-                        <div> 
-                            <p>STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                        </a>
-                    </article>
-                </li>
-                <!--Articulo 2-->
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto de Pokemon ">
-                            </picture>
-                            <div> 
-                                <p>POKEMON</p>
-                                <h4>PIDGEOTTO</h4>
-                                <p>$ 1799,99</p>
-                                <p>3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                            </a>
-                    </article>
-                </li>
-                <!--Articulo 3-->
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="../img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna LOVEGOOD">
-                            </picture>
-                            <div> 
-                                <p>HARRY POTTER</p>
-                                <h4>LUNA LOVEGOOD LION MASK</h4>
-                                <p>$ 1799,99</p>
-                                <p>3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                            </a>
-                    </article>
-                </li>
-            </ul>
-        </section> 
+    <!--Bloque 2-->
+  
 
-        <!--Bloque 3-->
-        <section>
-            <ul>
-                <!--Articulo 1-->
-                <li> 
-                    <article>
-                        <a href="">
-                        <picture>
-                            <img src="../img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper ">
-                        </picture>
-                        <div> 
-                            <p>STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p>$ 1799,99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                        </a>
-                    </article>
-                </li>
-                <!--Articulo 2-->
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto de Pokemon ">
-                            </picture>
-                            <div> 
-                                <p>POKEMON</p>
-                                <h4>PIDGEOTTO</h4>
-                                <p>$ 1799,99</p>
-                                <p>3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                            </a>
-                    </article>
-                </li>
-                <!--Articulo 3-->
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="../img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna LOVEGOOD">
-                            </picture>
-                            <div> 
-                                <p>HARRY POTTER</p>
-                                <h4>LUNA LOVEGOOD LION MASK</h4>
-                                <p>$ 1799,99</p>
-                                <p>3 CUOTAS SIN INTERÉS</p>
-                            </div>
-                            </a>
-                    </article>
-                </li>
-            </ul>
-        </section> 
-    </main> <!--Fin del main-->
+    <!--Bloque 3-->
+   
+
+
 
     <!--Inicio Paginación-->
     <section>
@@ -223,14 +79,33 @@
             <input type="button" value="7">
         </form>
     </section> <!--Fin Paginación-->
+</main>
 
-   
     <footer id="idFooter" class="footer">
         <!-- Lo carga el template.js -->
-  </footer>
+    </footer>
 
-  <script src="../js/template.js"></script>
-  
+<script src="../js/template.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script>
+    new Glide('.glide',
+        {
+            type: 'carousel',
+            startAt: 0,
+            perView: 3,
+            gap: 30,
+            breakpoints: {
+                991: {
+                    perView: 2
+                    },
+                768: {
+                perView: 1
+                }
+            }
+        }
+    ).mount();
+</script>
 </body>
 </html>
