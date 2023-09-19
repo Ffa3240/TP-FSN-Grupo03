@@ -11,43 +11,52 @@
         <!-- Lo carga el template.js -->
     </header>
 
+<main id="shop" class="conteiner"> 
     <!--Inicio Barra Lateral-->
-    <aside>
-        <form action="../pages/shop.html" method="">
-            <label for="search">BUSCAR</label>
-            <input type="text" placeholder="item o categoria" name="search" id="search">
-        </form>
-        <form action="">
-            <label for="ordenar">ORDENAR POR</label>
-            <select name="ordenar" id="ordenar">
-                <option value="opcion1">opcion1</option>
-                <option value="opcion2">opcion2</option>
-                <option value="opcion3">opcion3</option>
-                <option value="opcion4">opcion4</option>
+    <aside class="shop__filters filters">
+       <div class="filters__search"> 
+            <label class="filters__title" for="search">BUSCAR</label>
+            <input type="text" name="search" id="search" placeholder="item o categoria" >
+        </div>
+        <div class="filters__order"> 
+            <label class="filters__title" for="orderby">ORDENAR POR</label>
+            <select name="orderby" id="orderby">
+                <option value="az">A-Z</option>
+                <option value="za">Z-A</option>
+                <option value="desc">Mayor precio</option>
+                <option value="asc">Menor precio</option>
             </select>
-        </form>
-        <form action="">
-            <label for="precio">PRECIO</label>
+        </div>
+        <div class="filters__price"> 
+            <span class="filters__title">PRECIO</span>
+            <div> 
             <label for="min">MIN</label>
-            <input type="number" name="min" id="min">
-            <label for="min">MAX</label>
-            <input type="number" name="max" id="max">
-        </form>
-        <form action="">
-            <label for="">FILTRAR</label>
-            <input type="checkbox" name="Nuevos" id="Nuevos">
+            <input type="text" name="min" id="min" placeholder="0">
+            <label for="max">MAX</label>
+            <input type="text" name="max" id="max" placeholder="0">
+            </div>
+        </div>
+        <div class="filters__checks"> 
+            <span class="filters__title" for="filter">FILTRAR</span>
+            <div> 
+            <input type="checkbox" name="filter" id="news" value="news">
             <label for="">NUEVOS</label>
-            <input type="checkbox" name="oferta" id="oferta">
+            </div>
+            <div> 
+            <input type="checkbox" name="filter" id="offers" value="offers">
             <label for="">OFERTA</label>
-            <input type="checkbox" name="edicion especial" id="edicion especial">
+            </div>
+            <div> 
+            <input type="checkbox" name="filter" id="specials" value="specials">
             <label for="">EDICION ESPECIAL</label>
-            <input type="checkbox" name="favoritos" id="favoritos">
+            </div>
+            <div>
+            <input type="checkbox" name="filter" id="favs" value="favs">
             <label for="">FAVORITOS</label>
-        </form>
+            </div>
+        </div>
     </aside> <!--Fin Barra Lateral-->
 
-    <!--Inicio del main-->
-    <main>
         <!--Bloque 1-->
         <section>
             <ul>
@@ -209,7 +218,6 @@
                 </li>
             </ul>
         </section> 
-    </main> <!--Fin del main-->
 
     <!--Inicio Paginación-->
     <section>
