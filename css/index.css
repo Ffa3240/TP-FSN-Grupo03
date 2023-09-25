@@ -6,10 +6,10 @@
 
 
 /* MISCELANEOUS */
-@import url('/css/misc/normalize.css');
-@import url('/css/misc/variables.css');
-@import url('/css/misc/helpers.css');
 @import url('./misc/animations.css');
+@import url('./misc/helpers.css');
+@import url('./misc/normalize.css');
+@import url('./misc/variables.css');
 
 
 /* PARTIALS */
@@ -20,12 +20,13 @@
 
 /* COMPONENTS */
 
-@import url('/css/components/cards.css');
+@import url('./components/cards.css');
 @import url('./components/slider.css');
+@import url('./components/buttons.css');
 
 
 /* PAGES */
 
-@import url('/css/pages/item.css');
-@import url('/css/pages/home.css');
-@import url('/css/pages/shop.css');
+@import url('./pages/item.css');
+@import url('./pages/home.css');
+@import url('./pages/shop.css');
