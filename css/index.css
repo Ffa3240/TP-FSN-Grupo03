@@ -19,7 +19,7 @@
 
 
 /* COMPONENTS */
-
+@import url('/css/components/buttons.css');
 @import url('/css/components/cards.css');
 @import url('./components/slider.css');
 
@@ -29,3 +29,4 @@
 @import url('/css/pages/item.css');
 @import url('/css/pages/home.css');
 @import url('/css/pages/shop.css');
+@import url('/css/pages//edit.css');
