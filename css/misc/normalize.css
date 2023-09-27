@@ -21,6 +21,7 @@ a {
 .page-header,
 footer {
     font-family: var(--alternative-font);
+    background-color: var(--dark-bg-solid);
     color: var(--light-font-solid);
 }
 
@@ -32,7 +33,7 @@ img {
     width: 100%;
 }
 
-input[type="text"]::placeholder {
+input::placeholder {
     color: var(--dark-300);
     font-family: var(--base-font);
     font-weight: 500;
