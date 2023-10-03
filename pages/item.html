@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
     <title>Item | Funkoshop</title>
 </head>
 <body>
@@ -20,13 +20,13 @@
             <article class="item__info">
                 <p class="item__licence">Star Wars</p>
                 <h3 class="item__name">Baby Yoda Blueball</h3>
-                <p class="item_description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
-                <p class="item_price">1799.99</p>
-                <form class="item__cart">
-                    <button class="item__quantity">-</button>
-                    <input class="item__input" placeholder="0">
-                    <button class="item__quantity">+</button>
-                    <button class="item__submit">Agregar al carrito</button>
+                <p class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
+                <p class="item__price">1799.99</p>
+                <form class="item__cart" action="#">
+                    <button class="item__quantity" id="subtract" type="button">-</button>
+                    <input id="quantity" type="text" name="quantity" class="item__input" placeholder="0">
+                    <button id="add" class="item__quantity" type="button">+</button>
+                    <button class="item__submit btn btn--primary btn--medium">Agregar al carrito</button>
                 </form>
                 <p class="item__promo">
                     <a href="#">Ver métodos de pago</a>
@@ -38,7 +38,7 @@
             <h2 class="slider__title">Productos Relacionados</h2>
             <div class="glide__track" data-glide-el="track">
                 <ul class="slider__items glide__slides">
-                    <li>
+                    <li class="slider__item">
                         <article class="card-item">
                             <a class="card-item__link">
                                 <picture class="card-item__cover">
@@ -55,7 +55,7 @@
                             </a>
                         </article>
                     </li>
-                    <li>
+                    <li class="slider__item">
                         <article class="card-item">
                             <a class="card-item__link">
                                 <picture class="card-item__cover">
@@ -72,7 +72,7 @@
                             </a>
                         </article>
                     </li>
-                    <li>
+                    <li class="slider__item">
                         <article class="card-item">
                             <a class="card-item__link">
                                 <picture class="card-item__cover">
@@ -80,11 +80,28 @@
                                     <img class="card-item__img--front" src="https://res.cloudinary.com/db6uriqjm/image/upload/v1693183617/Codo%20a%20Codo/harry%20potter/luna-1_k1tx6x.webp" alt="Figura coleccionable Funko de Luna Lovegood">
                                     <img class="card-item__img--back" src="https://res.cloudinary.com/db6uriqjm/image/upload/v1693183617/Codo%20a%20Codo/harry%20potter/luna-box_tcgnx9.webp" alt="Figura coleccionable Funko de Luna Lovegood en caja">
                                 </picture>
-                                <div class="card-item__content">
-                                    <p class="card-item__licence">HARRY POTTER</p>
-                                    <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
-                                    <p class="card-item__price">$ 1799,99.-</p>
-                                    <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                                <div class="card-item__content" class="card-item__content">
+                                    <p class="card-item__licence" class="card-item__licence">HARRY POTTER</p>
+                                    <h4 class="card-item__name" class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                                    <p class="card-item__price" class="card-item__price">$ 1799,99.-</p>
+                                    <p class="card-item__promo" class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="slider__item">
+                        <article class="card-item" class="card-item">
+                            <a class="card-item__link" class="card-item__link">
+                                <picture class="card-item__cover" class="card-item__cover">
+                                    <span class="card-item__tag" class="card-item__tag">Nuevo</span>
+                                    <img class="card-item__img--front" class="card-item__img--front" src="https://res.cloudinary.com/db6uriqjm/image/upload/v1693183852/Codo%20a%20Codo/star%20wars/bobbafeth-1_vbuewn.webp">
+                                    <img class="card-item__img--back" class="card-item__img--back" src="https://res.cloudinary.com/db6uriqjm/image/upload/v1693183852/Codo%20a%20Codo/star%20wars/bobbafeth-box_pegdei.webp">
+                                </picture>
+                                <div class="card-item__content" class="card-item__content">
+                                    <p class="card-item__licence" class="card-item__licence">BOBA FETT</p>
+                                    <h4 class="card-item__name" class="card-item__name">BOBA FETT FIGHTER</h4>
+                                    <p class="card-item__price" class="card-item__price">$ 1799,99.-</p>
+                                    <p class="card-item__promo" class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                                 </div>
                             </a>
                         </article>

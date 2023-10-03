@@ -1,0 +1,63 @@
+#register {
+    margin: var(--spacing-36) auto;
+    display: flex;
+    flex-direction: column;;
+}
+
+.register__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-36);
+    font-family: var(--alternative-font);
+}
+
+.register__header h2 {
+    font-size: var(--font-jumbo);
+    font-weight: 700;
+}
+
+.register__header p {
+    font-size: var(--font-xlarge);
+    font-weight: 500;
+}
+
+.register__form {
+    margin: var(--spacing-36) auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+    font-family: var(--base-font);
+    font-weight: 400;
+}
+
+#register .form__box {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;  
+}
+
+#register .form__label {
+    font-size: var(--font-large);
+    font-weight: inherit;
+    padding-right: var(--spacing-16);
+}
+
+#register .form__input {
+    flex-grow: 0;
+    font-size: var(--font-small);
+    font-weight: inherit;
+}
+
+#register .form__input::placeholder {
+    font-weight: inherit;
+}
+
+#register .form__terms {    
+    font-size: var(--font-medium);
+}
+
+#register .form__link {
+    text-align: center;
+}
+
