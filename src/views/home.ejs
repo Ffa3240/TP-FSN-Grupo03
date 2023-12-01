@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | FunkoShop</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <header id="idHeader" class="page-header">
+        <!-- Lo carga el template.js -->
+        <%-include("partials/head")%>
+    </header>
+
+    <section class="hero">
+        <article class="hero__content container">
+            <h3 class="hero__title">Nuevos Ingresos</h3>
+            <p class="hero__text">Descubrí el próximo Funko Pop de tu colección</p>
+            <a class="hero__link" href="./pages/shop.html">SHOP</a>
+        </article>
+    </section>
+
+    <main class="main-container">
+
+        <% licences.forEach( licence => { %>
+            <section class="collection container">
+                <article class="collection__content">
+                    <h3 class="collection__title"><%=licence.licence_name%></h3>
+                    <p class="collection__text"><%=licence.licence_description%></p>
+                    <a class="collection__link" href="/shop?filter=licence-<%= licence.licence_id %>">VER COLECCIÓN</a>
+                </article>
+                <picture class="collection__cover">
+                    <img src=<%=licence.licence_img%>
+                        alt=<%=licence.licence_img_description%>>
+                </picture>
+            </section>
+        <% }); %>
+
+<!--
+        <section class="collection container">
+            <article class="collection__content">
+                <h3 class="collection__title">Star Wars & The Mandalorian</h3>
+                <p class="collection__text">Disfruta de una saga que sigue agregando personajes a su colección.</p>
+                <a class="collection__link" href="./pages/shop.html">VER COLECCIÓN</a>
+            </article>
+            <picture class="collection__cover">
+                <img src="./img/star-wars/baby-yoda-1.webp"
+                    alt="Figura coleccionable funko de Grogu de la serie The Mandaloriam">
+            </picture>
+        </section>
+
+        <section class="collection container">
+            <article class="collection__content">
+                <h3 class="collection__title">POKEMON INDIGO</h3>
+                <p class="collection__text">Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
+                <a class="collection__link" href="./pages/shop.html">VER COLECCIÓN</a>
+            </article>
+            <picture class="collection__cover">
+                <img src="./img/pokemon/vulpix-1.webp" alt="Figura coleccionable funko de Vulpix de la serie Pokemon">
+            </picture>
+        </section>
+
+        <section class="collection container">
+            <article class="collection__content">
+                <h3 class="collection__title">HARRY POTTER</h3>
+                <p class="collection__text">Revive los recuerdos de una saga llena de magia y encanto.</p>
+                <a class="collection__link" href="./pages/shop.html">VER COLECCIÓN</a>
+            </article>
+            <picture class="collection__cover">
+                <img src="./img/harry-potter/snape-patronus-1.webp"
+                    alt="Figura coleccionable funko de patronus de snape en la pelicula de Harry Potter">
+            </picture>
+        </section>
+    -->
+
+        <%- include('components/slider') %>
+
+    </main>
+
+    <footer id="idFooter" class="footer">
+        <!-- Lo carga el template.js -->
+        <%-include("partials/footer")%>
+    </footer>
+
+    <!--script src="./js/template.js"></script-->
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        new Glide('.glide',
+            {
+                type: 'carousel',
+                startAt: 0,
+                perView: 3,
+                gap: 30,
+                autoplay: 3000,
+                breakpoints: {
+                    991: {
+                        perView: 2
+                    },
+                    768: {
+                        perView: 1
+                    }
+                }
+            }
+        ).mount();
+    </script>
+
+</body>
+
+</html>
