@@ -151,11 +151,23 @@ h1{
     background: #F24E1E;
     border: #F24E1E;
     color: #FFF;
+    transition: transform 0.5s;
 }
+.botonesCantidad button:hover {
+    background-color: #f85928;
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
 .iconoEliminar{
     background: transparent;
     border: 0;
+    transition: transform 0.5s;
 }
+.iconoEliminar:hover {
+    transform: scale(1.6); 
+    cursor: pointer; 
+  }
 .total{
     display: flex;
 }
@@ -168,6 +180,7 @@ h1{
     line-height: normal;
     margin-right: 75px;
 }
+
 /* fin section 1 */
 /* section 2 */
 .resumen{
@@ -239,6 +252,11 @@ h1{
     line-height: normal;
     padding: 15px;
     margin-top: 20px;
+    transition: transform 0.5s;
+}
+.botonPagar:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 /* fin section 2 */
 /* FIN MAIN */
