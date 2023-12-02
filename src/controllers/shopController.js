@@ -1,6 +1,6 @@
 const fs = require ("fs")
 const productosJSON = JSON.parse(fs.readFileSync("./data/producto.json","utf-8"))
-const sliderRelacionadosJSON = JSON.parse(fs.readFileSync("./data/sliderRelacionado.json","utf-8"))
+
 const shopControllers = {
     shop: (req, res) => {
        let filtroCategoria = req.query.Cat 
@@ -26,16 +26,21 @@ const shopControllers = {
     item: (req, res) => {
         let productoBuscado = ""
         let productosRelacionados = sliderRelacionadosJSON.map(e => e.product_id)
-        let sliderItems = []
         productosJSON.forEach(producto => {
             if (producto.product_id == req.params.id) {
                 productoBuscado=producto;
             }
-            if (productosRelacionados.includes(producto.product_id)) {
-                sliderItems.push(producto)
+  
+        })
+      
+        let sliderItems = []
+        productosJSON.forEach(producto => {
+            if (producto.category_name == productoBuscado.category_name || 
+                producto.licence_name == productoBuscado.licence_name) {
+                    sliderItems.push(producto)
             }
         })
-     
+
         if (productoBuscado != "") {
             res.render("item", {producto:productoBuscado, sliderItems:sliderItems, sliderTitulo: "PRODUCTOS RELACIONADOS"})
         }

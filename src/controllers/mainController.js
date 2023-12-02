@@ -5,10 +5,9 @@ const sliderLanzamientosJSON = JSON.parse(fs.readFileSync("./data/sliderLanzamie
 
 const mainControllers = {
     home: (req, res) => {
-        let lanzamientos = sliderLanzamientosJSON.map(e => e.product_id)
         let sliderItems = []
         productosJSON.forEach(producto => {
-            if (lanzamientos.includes(producto.product_id)) {
+            if (producto.new) {
                 sliderItems.push(producto)
             }
         });
