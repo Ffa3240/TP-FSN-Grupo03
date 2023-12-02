@@ -1,4 +1,5 @@
 [
+
     {
         "product_id":1,
         "licence_name":"Star Wars",
@@ -117,7 +118,7 @@
         "dues":10,
         "product_sku":"HPT001001",
         "img_front":"/img/harry-potter/harry-1.webp",
-        "img_back":"/img/pharry-potter/harry-box.webp"
+        "img_back":"/img/harry-potter/harry-box.webp"
     },
     {
         "product_id":11,
@@ -129,7 +130,7 @@
         "dues":10,
         "product_sku":"HPT001002",
         "img_front":"/img/harry-potter/hermione-1.webp",
-        "img_back":"/img/pharry-potter/hermione-box.webp"
+        "img_back":"/img/harry-potter/hermione-box.webp"
     },
     {
         "product_id":12,
@@ -141,7 +142,7 @@
         "dues":10,
         "product_sku":"HPT001003",
         "img_front":"/img/harry-potter/luna-1.webp",
-        "img_back":"/img/pharry-potter/luna-box.webp"
+        "img_back":"/img/harry-potter/luna-box.webp"
     },
     {
         "product_id":13,
@@ -153,6 +154,182 @@
         "dues":10,
         "product_sku":"HPT001004",
         "img_front":"/img/harry-potter/snape-patronus-1.webp",
-        "img_back":"/img/pharry-potter/snape-patronus-box.webp"
+        "img_back":"/img/harry-potter/snape-patronus-box.webp"
+    },
+
+    {
+        "product_id":14,
+        "licence_name":"Harry Potter",
+        "category_name":"Remeras",
+        "product_name":"Harry Potter - Red",
+        "product_description":"Remera Harry Potter - Red - Manga cortas",
+        "product_price":1799.99,
+        "dues":10,
+        "product_sku":"HPT002001",
+        "img_front":"/img/harry-potter/remera_harryPotter.webp",
+        "img_back":"/img/harry-potter/remera_harryPotter.webp"
+    },
+   
+    {
+        "product_id":15,
+        "licence_name":"Harry Potter",
+        "category_name":"Remeras",
+        "product_name":"Hogwarts - Black",
+        "product_description":"Remera Hogwarts - Black - Manga cortas",
+        "product_price":1799.99,
+        "dues":10,
+        "product_sku":"HPT002002",
+        "img_front":"/img/harry-potter/remera_hogwarts.webp",
+        "img_back":"/img/harry-potter/remera_hogwarts.webp"
+    },
+
+    {
+        "product_id":16,
+        "licence_name":"Pokemon",
+        "category_name":"Remeras",
+        "product_name":"Pikachu",
+        "product_description":"Remera Pikachu - Gris - Manga cortas",
+        "product_price":1799.99,
+        "dues":10,
+        "product_sku":"PKM002001",
+        "img_front":"/img/pokemon/remera_pikachu.webp",
+        "img_back":"/img/pokemon/remera_pikachu.webp"
+    },
+
+    {
+        "product_id":17,
+        "licence_name":"Pokemon",
+        "category_name":"Remeras",
+        "product_name":"Pokemon Ghost",
+        "product_description":"Remera Pokemon Ghost Type - Black - Manga cortas",
+        "product_price":1799.99,
+        "dues":10,
+        "product_sku":"PKM002002",
+        "img_front":"/img/pokemon/remera_pokemon.webp",
+        "img_back":"/img/pokemon/remera_pokemon.webp"
+    },
+    {
+        "product_id":17,
+        "licence_name":"Star Wars",
+        "category_name":"Remeras",
+        "product_name":"Dark Lord",
+        "product_description":"Remera Dark Lord - Black - Manga cortas",
+        "product_price":1799.99,
+        "dues":10,
+        "product_sku":"STR002001",
+        "img_front":"/img/star-wars/remera_darklord.webp",
+        "img_back":"/img/star-wars/remera_darklord.webp"
+    },
+    {
+        "product_id":18,
+        "licence_name":"Star Wars",
+        "category_name":"Remeras",
+        "product_name":"Skywalker",
+        "product_description":"Remera Skywalker - Black - Manga cortas",
+        "product_price":1799.99,
+        "dues":10,
+        "product_sku":"STR002002",
+        "img_front":"/img/star-wars/remera_starWars.webp",
+        "img_back":"/img/star-wars/remera_starWars.webp"
+    },
+    {
+        "product_id":19,
+        "licence_name":"Star Wars",
+        "category_name":"Llaveros",
+        "product_name":"Darth Vader",
+        "product_description":"Llavero Darth Vader - goma",
+        "product_price":1799.99,
+        "dues":10,
+        "product_sku":"STR003001",
+        "img_front":"/img/star-wars/llavero_DarthVader.webp",
+        "img_back":"/img/star-wars/llavero_DarthVader.webp"
+    },
+    {
+        "product_id":20,
+        "licence_name":"Star Wars",
+        "category_name":"Llaveros",
+        "product_name":"Star Wars",
+        "product_description":"Llavero Star Wars - goma",
+        "product_price":1799.99,
+        "dues":10,
+        "product_sku":"STR003002",
+        "img_front":"/img/star-wars/llavero_StarWars.webp",
+        "img_back":"/img/star-wars/llavero_StarWars.webp"
+    },
+    {
+        "product_id":20,
+        "licence_name":"Star Wars",
+        "category_name":"Llaveros",
+        "product_name":"Star Wars - Varios",
+        "product_description":"Llavero Star Wars - Varios - goma",
+        "product_price":1799.99,
+        "dues":10,
+        "product_sku":"STR003003",
+        "img_front":"/img/star-wars/llavero_StarWarsVarios.webp",
+        "img_back":"/img/star-wars/llavero_StarWarsVarios.webp"
+    },
+    {
+        "product_id":21,
+        "licence_name":"Harry Potter",
+        "category_name":"Llaveros",
+        "product_name":"Harry Potter",
+        "product_description":"Llavero Harry Potter - plastico",
+        "product_price":1799.99,
+        "dues":10,
+        "product_sku":"HPT003001",
+        "img_front":"/img/harry-potter/llavero_harryPotter.webp",
+        "img_back":"/img/harry-potter/llavero_harryPotter.webp"
+    },
+    {
+        "product_id":22,
+        "licence_name":"Harry Potter",
+        "category_name":"Llaveros",
+        "product_name":"Harry Potter SET",
+        "product_description":"Llavero Potter - SET - Metal",
+        "product_price":1799.99,
+        "dues":10,
+        "product_sku":"HPT003002",
+        "img_front":"/img/harry-potter/llavero_harryPotterSet.webp",
+        "img_back":"/img/harry-potter/llavero_harryPotterSet.webp"
+    },
+
+    {
+        "product_id":22,
+        "licence_name":"Pokemon",
+        "category_name":"Llaveros",
+        "product_name":"Pokebola",
+        "product_description":"Llavero Pokebola - plastico",
+        "product_price":1799.99,
+        "dues":10,
+        "product_sku":"PKM003001",
+        "img_front":"/img/pokemon/llavero_pokebola.webp",
+        "img_back":"/img/pokemon/llavero_pokebola.webp"
+    },
+    {
+        "product_id":23,
+        "licence_name":"Pokemon",
+        "category_name":"Llaveros",
+        "product_name":"Charmander",
+        "product_description":"Llavero Charmander - plastico",
+        "product_price":1799.99,
+        "dues":10,
+        "product_sku":"PKM003002",
+        "img_front":"/img/pokemon/llavero_charmander.webp",
+        "img_back":"/img/pokemon/llavero_charmander.webp"
+    },
+    {
+        "product_id":22,
+        "licence_name":"Pokemon",
+        "category_name":"Llaveros",
+        "product_name":"Pikachu",
+        "product_description":"Llavero Pikachu - plastico",
+        "product_price":1799.99,
+        "dues":10,
+        "product_sku":"PKM003003",
+        "img_front":"/img/pokemon/llavero_pikachu.webp",
+        "img_back":"/img/pokemon/llavero_pikachu.webp"
     }
+   
+
+
 ]
