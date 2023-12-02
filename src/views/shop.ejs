@@ -39,19 +39,19 @@
         <div class="filters__checks"> 
             <span class="filters__title" for="filter">FILTRAR</span>
             <div> 
-            <input type="checkbox" name="filter" id="news" value="news">
+            <input type="checkbox" name="filter" id="news" value="news" onclick="selChk()">
             <label for="">NUEVOS</label>
             </div>
             <div> 
-            <input type="checkbox" name="filter" id="offers" value="offers">
+            <input type="checkbox" name="filter" id="offers" value="offers" onclick="selChk()">
             <label for="">OFERTA</label>
             </div>
             <div> 
-            <input type="checkbox" name="filter" id="specials" value="specials">
+            <input type="checkbox" name="filter" id="specials" value="specials" onclick="selChk()">
             <label for="">EDICION ESPECIAL</label>
             </div>
             <div>
-            <input type="checkbox" name="filter" id="favs" value="favs">
+            <input type="checkbox" name="filter" id="favs" value="favs" onclick="selChk()">
             <label for="">FAVORITOS</label>
             </div>
     </div>
@@ -106,6 +106,14 @@
 
 <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-
+<script>
+    function selChk() {
+      //  let chkNews = document.getElementById("news")
+      //  let chkOffers = document.getElementById("offers")
+      //  let chkSpecials = document.getElementById("specials")
+      //  let chkFavs = document.getElementById("favs")
+      //  location.href = "/Shop/?ChkNews="+chkNews.checked+"&?ChkOffers="+chkOffers.checked+"&?ChkSpecials="//+chkSpecials.checked+"&?ChkFavs="+chkFavs.checked
+    }
+</script>
 </body>
 </html>

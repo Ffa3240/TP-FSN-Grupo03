@@ -25,7 +25,6 @@ const shopControllers = {
     },
     item: (req, res) => {
         let productoBuscado = ""
-        let productosRelacionados = sliderRelacionadosJSON.map(e => e.product_id)
         productosJSON.forEach(producto => {
             if (producto.product_id == req.params.id) {
                 productoBuscado=producto;
