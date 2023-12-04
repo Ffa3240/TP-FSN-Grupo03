@@ -7,9 +7,10 @@ const shopControllers = {
         let filtroLicencia = req.query.Lic
         filtroCategoria = filtroCategoria==undefined ? "" : filtroCategoria;
         filtroLicencia = filtroLicencia==undefined ? "" : filtroLicencia;
-       
+        let filtro = {categoria: filtroCategoria, licencia: filtroLicencia}
+        
         if (filtroCategoria == "" && filtroLicencia == "") {
-            res.render("shop", {productos:productosJSON})
+            res.render("shop", {productos:productosJSON, filtro:filtro})
         }
         else {
             let productos = []
@@ -19,7 +20,8 @@ const shopControllers = {
                     productos.push(producto)
                 }
             })
-                res.render("shop",  {productos:productos})
+
+                res.render("shop",  {productos:productos, filtro:filtro})
         }
       
     },

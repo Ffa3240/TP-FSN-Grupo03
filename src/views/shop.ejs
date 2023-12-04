@@ -60,6 +60,12 @@
 
     <!--Bloque contenedor-->
         <section class="shop__content">
+            <% if (filtro.categoria!="") { %>
+              <h1 style="font-size: 30px"><%=filtro.categoria%></h1>
+            <% } %>
+            <% if (filtro.licencia!="") { %>
+                <h1 style="font-size: 30px"><%=filtro.licencia%></h1>
+              <% } %>
             <ul class="shop__items">
 
                 <% productos.forEach( producto => { %>
