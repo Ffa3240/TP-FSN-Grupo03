@@ -3,108 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <title>Create</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <nav>
-                <a href="/TP-FSN-Grupo03/index.html">
-                    <img src="/TP-FSN-Grupo03/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca FUNKOSHOP">
-                </a>
-                <li>
-                    <a href="/TP-FSN-Grupo03/index.html">VER TIENDA</a>
-                </li>
-                <li>
-                    <a href="/pages/Admin/admin.html">ADMIN</a>
-                </li>
-                <li>
-                    <a href="/pages/Admin/login.html">SALIR</a>
-                </li>
-            </nav>
-        </nav>
+    <header id="idHeader" class="page-header">
+        <!-- Lo carga el template_admin.js -->
     </header>
-    <main>
-        <h2>CREAR NUEVO ITEM</h2>
-        <form action="">
-            <section>
-                <article>
-                    <label for="categoria">CATEGORIA:</label>
-                    <select id="categoria" name="categoria">
-                    <option value="select">Seleccionar</option>
+    <main id="create" class="container">
+        <h2 class="create__title">CREATE NEW ITEM</h2>
+        <form class="create__form" action="/admin/create" method="POST" enctype="application/x-www-form-urlencoded">
+            <div class="form__flex">
+                <div class="form__box--flex">
+                    <label class="form__label" for="collection">Category:</label>
+                    <select class="form__select" name="collection" id="collection" required>
+                        <option value="" disabled selected hidden>Select</option>
+                        <option value="Collectable Figures">Collectable Figures</option>
+                        <option value="Key Ring">Key Ring</option>
+                        <option value="T-shirt">T-shirt</option>
                     </select>
-                </article><br><br>
-                <article>
-                    <label for="licencia">LICENCIA:</label>
-                    <select id="licencia" name="licencia">
-                    <option value="select">Seleccionar</option>
-                    </select><br><br>
-                </article>
-                <article>
-                    <label for="Nombre">Nombre del producto:</label>
-                    <input type="textarea" id="Nombre" name="Nombre" placeholder="Kakashi Hatake Shippuden Saga"><br><br>
-                </article>
-                <article>
-                <textarea name="message" rows="10" cols="30" placeholder="Descripcion del producto"></textarea><br>
-                </article><br>
-                <article>
-                    <label for="sku">SKU:</label>
-                    <input type="text" id="sku" name="sku" placeholder= "SSK111AB001">
-                </article><br>
-                <article>
-                    <label for="precio">Precio:</label>
-                    <input type="text" id="precio" name="precio" placeholder= "$ 0.000,0">
-                </article><br>
-                <article>
-                    <label for="stock">Stock:</label>
-                    <input type="number" id="stock" name="stock" placeholder= "0">
-                </article><br>
-                <article>
-                    <label for="desc">Descuento:</label>
-                    <input type="text" id="desc" name="desc" placeholder= "0%">
-                </article><br>
-                <article>
-                    <label for="cuota">Cuota:</label>
-                    <select id="cuota" name="cuota">
-                    <option placeholder="">3 cuotas sin interes</option>
+                </div>
+                <div class="form__box--flex">
+                    <label class="form__label" for="collection">Licence:</label>
+                    <select class="form__select" name="collection" id="collection" required>
+                        <option value="" disabled selected hidden>Select</option>
+                        <option value="starwars">Star Wars</option>
+                        <option value="pokemon">Pokemon</option>
+                        <option value="harrypotter">Harry Potter</option>
                     </select>
-                </article><br>
-                <article>
-                    <label for="imagenes">Imágenes:</label>
-                    <input type="file" id="imagenes" name="imagenes">
-                </article><br>
-                <input type="reset" value="Limpiar"><br><br>
-            </section>
+                </div>
+            </div>
+            <div class="form__box--flex">
+                <label class="form__label" for="name">Product name:</label>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Kakashi Hatake Shippuden Saga" required>
+            </div>
+            <div>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Product description" required></textarea>
+            </div>
+            <div class="form__flex">
+                <div class="form__box--flex">
+                    <label class="form__label" for="sku">SKU:</label>
+                    <input class="form__input" type="text" name="sku" id="sku" placeholder="SSK111AB001" required>
+                </div>
+                <div class="form__box--flex">
+                    <label class="form__label" for="price">Price:</label>
+                    <div class="form__input-wrapper"><span>$</span><input class="form__input" type="text" name="price" id="price" data-type="currency" placeholder="0.000,00"></div>
+                </div>
+                <div class="form__box--flex">
+                    <label class="form__label" for="stock">Stock:</label>
+                    <div class="form__input-wrapper"><input class="form__input" type="text" name="stock" id="stock" placeholder="0" required><span>unidades</span></div>
+                </div>
+            </div>
+            <div class="form__flex">
+                <div class="form__box--flex">
+                    <label class="form__label" for="discount">Discount:</label>
+                    <div class="form__input--wrapper"><input class="form__input" type="text" name="discount" id="discount" placeholder="0" required><span>%</span></div>
+                </div>
+                <div class="form__box--flex">
+                    <label class="form__label" for="dues">Dues:</label>
+                    <select class="form__select" name="dues" id="dues">
+                        <option value="0">1 Payment</option>
+                        <option value="3">3 Interest Free Payments</option>
+                        <option value="6">6 Interest Free Payments</option>
+                        <option value="9">9 Interest Free Payments</option>
+                        <option value="12">12 Interest Free Payments</option>
+                        <option value="18">18 Interest Free Payments</option>
+                        <option value="24">24 Interest Free Payments</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form__box--flex">
+                <label class="form__label" for="images">Images:</label>
+                <input type="file" name="images" id="img" multiple>
+            </div>
+            <div class="form__flex">
+                <input class="form__btn btn btn--primary btn--large" type="submit" value="Add Product">
+                <input class="form__btn btn btn--primary btn--large" type="reset" value="Clear">
+            </div>
         </form>
-        
     </main>
-
-    <footer>
-        <section>
-            <nav>
-                <li>
-                    <a href="../shop.html">SHOP</a>
-                </li>
-                <li>
-                    <a href="">CREAR CUENTA</a>
-                </li>
-                <li>
-                    <a href="">LOGIN</a>
-                </li>
-                <li>
-                    <a href="">CONTACTO</a>
-                </li>
-                <picture>
-                <a href="/TP-FSN-Grupo03/index.html">
-                    <img src="/TP-FSN-Grupo03/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca FUNKOSHOP">
-                </a>
-                </picture>
-            </nav>
-
-        </section>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
-
+    <footer id="idFooter" class="footer">
+        <!-- Lo carga el template_admin.js -->
     </footer>
-    
+    <script src="../../js/template_admin.js"></script>
 </body>
 </html>

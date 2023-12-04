@@ -3,47 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop | FunkoShop</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <title>Login | FunkoShop</title>
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
-    <header id="idHeader">
+    <header id="idHeader" class="page-header">
         <!-- Lo carga el template.js -->
     </header>
-    <main>
-        <section class="login_form">
-            <div class="login_form--container">
-                <h1 class="page_title">
-                    INGRESAR A MI CUENTA
-                </h1>
-                <form action="" method="post" class="form">
-                    <div class="form_item">
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="johndoe@correo.com">
-                    </div>
-                    <div class="form_item">
-                        <label for="pass">Contraseña:</label>
-                        <input type="password" name="pass" id="pass">
-                    </div>
-                    <div class="form_controls">
-                        <input type="submit">
-                        <span>
-                            <input type="checkbox">
-                            <span>Recordarme</span>
-                        </span>
-                    </div>
-                </form>
-                <div class="forgot_password">
-                    <a href="#">Olvidé mi contraseña</a>
+    <main id="login" class="container">
+        <h2 class="login__title">Log In</h2>
+        <form class="login__form form" action="" method="post">
+            <div class="form__box--grid">
+                <label class="form__label" for="email">Email:</label>
+                <input class="form__input" type="text" name="email" id="email" placeholder="johndoe@email.com">
+            </div>
+            <div class="form__box--grid">
+                <label class="form__label" for="password">Password:</label>
+                <input class="form__input" type="password" name="password" id="password"
+                    placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+            </div>
+            <div class="form__submission">
+                <input class="form__btn btn btn--primary btn--large" type="submit" value="Ingresar">
+                <div class="form__remember">
+                    <input type="checkbox" name="remember" id="">
+                    <label for="">Remember me</label>
                 </div>
             </div>
-        </section>
+            <a class="form__link" href="">Forgot password?</a>
+        </form>
     </main>
-    <footer id="idFooter">
+    <footer id="idFooter" class="footer">
         <!-- Lo carga el template.js -->
     </footer>
 
-  <script src="../js/template.js"></script>
+  <script src="../../js/template_admin.js"></script>
   
 </body>
 </html>
