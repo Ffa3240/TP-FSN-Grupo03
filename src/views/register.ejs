@@ -1,15 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../css/index.css">
-        <title>Register</title>
-    </head>
+    <%-include("partials/head")%>
     <body>
-        <header id="idHeader" class="page-header">
-            <%-include("partials/head_admin")%>
-        </header>
+        <%-include("partials/header_admin")%>
         <main id="register" class="container">
             <div class="register__header">
                 <h2>CREA TU CUENTA</h2>
@@ -47,8 +40,6 @@
                 </div>
             </form>
         </main>
-        <footer id="idFooter" class="footer">
-            <%-include("partials/footer")%>
-        </footer>
+        <%-include("partials/footer")%>
     </body>
 </html>
