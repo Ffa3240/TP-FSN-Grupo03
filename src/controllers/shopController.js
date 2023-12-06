@@ -10,7 +10,7 @@ const shopControllers = {
         let filtro = {categoria: filtroCategoria, licencia: filtroLicencia}
         
         if (filtroCategoria == "" && filtroLicencia == "") {
-            res.render("shop", {productos:productosJSON, filtro:filtro})
+            res.render("shop", {title:'Shop | FunkoShop', productos:productosJSON, filtro:filtro})
         }
         else {
             let productos = []
@@ -21,7 +21,7 @@ const shopControllers = {
                 }
             })
 
-                res.render("shop",  {productos:productos, filtro:filtro})
+                res.render("shop",  {title:'Shop | FunkoShop', productos:productos, filtro:filtro})
         }
       
     },
@@ -43,7 +43,7 @@ const shopControllers = {
         })
 
         if (productoBuscado != "") {
-            res.render("item", {producto:productoBuscado, sliderItems:sliderItems, sliderTitulo: "PRODUCTOS RELACIONADOS"})
+            res.render("item", {title:'Item | FunkoShop', producto:productoBuscado, sliderItems:sliderItems, sliderTitulo: "PRODUCTOS RELACIONADOS"})
         }
     },
     
