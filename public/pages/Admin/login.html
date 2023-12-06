@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../css/index.css">
-        <title>Login</title>
-    </head>
-    <body>
-        <header id="idHeader" class="page-header">
-            <!-- Lo carga el template_admin.js -->
-        </header>
-        <main class="container">
-            <div>
-                <p>Login View Route</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | FunkoShop</title>
+    <link rel="stylesheet" href="../../css/index.css">
+</head>
+<body>
+    <header id="idHeader" class="page-header">
+        <!-- Lo carga el template.js -->
+    </header>
+    <main id="login" class="container">
+        <h2 class="login__title">Log In</h2>
+        <form class="login__form form" action="" method="post">
+            <div class="form__box--grid">
+                <label class="form__label" for="email">Email:</label>
+                <input class="form__input" type="text" name="email" id="email" placeholder="johndoe@email.com">
             </div>
-        </main>
-        <footer id="idFooter" class="footer">
-            <!-- Lo carga el template_admin.js -->
-        </footer>
-        <script src="../../js/template_admin.js"></script>
-    </body>
+            <div class="form__box--grid">
+                <label class="form__label" for="password">Password:</label>
+                <input class="form__input" type="password" name="password" id="password"
+                    placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+            </div>
+            <div class="form__submission">
+                <input class="form__btn btn btn--primary btn--large" type="submit" value="Ingresar">
+                <div class="form__remember">
+                    <input type="checkbox" name="remember" id="">
+                    <label for="">Remember me</label>
+                </div>
+            </div>
+            <a class="form__link" href="">Forgot password?</a>
+        </form>
+    </main>
+    <footer id="idFooter" class="footer">
+        <!-- Lo carga el template.js -->
+    </footer>
+
+  <script src="../../js/template_admin.js"></script>
+  
+</body>
 </html>
