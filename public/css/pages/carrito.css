@@ -3,38 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* HEADER */
-.header{
-    background-color: #30343F;
-    width: 100%;
-}
-.headerNavBar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 39px 110px;
-}
-.headerMenu{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-}
-.headerMenu li{
-    padding-right: 49px;
-}
-.headerMenu li a{
-    text-decoration: none;
-    color: #FFF;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-/* FIN HEADER */
-/* MAIN */
 /* section 1 */
 h1{
     color: #111;
@@ -151,11 +119,23 @@ h1{
     background: #F24E1E;
     border: #F24E1E;
     color: #FFF;
+    transition: transform 0.5s;
 }
+.botonesCantidad button:hover {
+    background-color: #f85928;
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
 .iconoEliminar{
     background: transparent;
     border: 0;
+    transition: transform 0.5s;
 }
+.iconoEliminar:hover {
+    transform: scale(1.6); 
+    cursor: pointer; 
+  }
 .total{
     display: flex;
 }
@@ -168,6 +148,7 @@ h1{
     line-height: normal;
     margin-right: 75px;
 }
+
 /* fin section 1 */
 /* section 2 */
 .resumen{
@@ -239,40 +220,10 @@ h1{
     line-height: normal;
     padding: 15px;
     margin-top: 20px;
+    transition: transform 0.5s;
+}
+.botonPagar:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 /* fin section 2 */
-/* FIN MAIN */
-/* FOOTER */
-footer{
-    background: #30343F;
-}
-footer nav{
-    padding: 150px 110px 55px 110px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-footer ul li{
-    list-style: none;
-}
-footer ul li a{
-    color: #FFF;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-decoration: none;
-}
-footer p{
-    color: #FFF;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-align: center;
-    padding: 20px;
-}
-/* FIN FOOTER */
