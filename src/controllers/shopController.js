@@ -71,6 +71,16 @@ const shopControllers = {
             res.render("item", {title:'Item | FunkoShop', producto:productoBuscado, sliderItems:sliderItems, sliderTitulo: "PRODUCTOS RELACIONADOS"})
         }
     },
+     cart: (req, res) => {
+        res.render("carrito", {
+          title: "Carrito",
+          productos: productosJSON,
+        });
+    },
+      addToCart: (req, res) => {
+        const productId = req.body.productId;
+        res.send(`Producto ${productId} agregado a tu carrito con éxito`);
+    },
     
     about: (req, res) => res.send("Route for About View"),
     faqs: (req, res) => res.send("Route for Faqs View")
