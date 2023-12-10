@@ -105,6 +105,10 @@
     gap: var(--spacing-12);
 }
 
+.pagination_hide {
+    display: none;
+}
+
 .pagination .pagination__link {
     display: block;
     font-size: var(--font-medium);
