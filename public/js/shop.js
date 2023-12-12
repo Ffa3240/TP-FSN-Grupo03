@@ -41,6 +41,7 @@ function filtrar() {
                 if (!cardNombre.toUpperCase().includes(search.value.toUpperCase())
                     && !cardCatLic.toUpperCase().includes(search.value.toUpperCase())) {
                     el.classList.add('shop__item__hide');
+                    el.classList.add('pagination_hide');
                 }
             }
         });
