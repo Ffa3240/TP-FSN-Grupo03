@@ -1,6 +1,6 @@
 const fs = require ("fs")
 const productosJSON = JSON.parse(fs.readFileSync("./data/producto.json","utf-8"))
-
+let cart = [];
 const shopControllers = {
     shop: (req, res) => {
       
@@ -71,17 +71,32 @@ const shopControllers = {
             res.render("item", {title:'Item | FunkoShop', producto:productoBuscado, sliderItems:sliderItems, sliderTitulo: "PRODUCTOS RELACIONADOS"})
         }
     },
-     cart: (req, res) => {
+    addToCart: (req, res) => {
+        const productId = req.params.id;
+        // Encuentra el producto por ID
+        const productToAdd = productosJSON.find(product => product.product_id === parseInt(productId));
+    
+        // Verifica si el producto ya está en el carrito
+        const existingProduct = cart.find(product => product.product_id === parseInt(productId));
+    
+        if (productToAdd && !existingProduct) {
+            // Agrega el producto al carrito solo si no existe
+            cart.push(productToAdd);
+    
+            // Responde con el carrito actualizado
+            res.json({ cart });
+        } else {
+            res.status(404).send("Producto no encontrado o ya está en el carrito");
+        }
+    },    
+    
+    cart: (req, res) => {
         res.render("carrito", {
-          title: "Carrito",
-          productos: productosJSON,
+            title: "Carrito",
+            productos: productosJSON,
+            cart: cart, // Pasa el carrito a la vista
         });
     },
-      addToCart: (req, res) => {
-        const productId = req.body.productId;
-        res.send(`Producto ${productId} agregado a tu carrito con éxito`);
-    },
-    
     about: (req, res) => res.send("Route for About View"),
     faqs: (req, res) => res.send("Route for Faqs View")
 }
