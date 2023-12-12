@@ -7,6 +7,6 @@ router.get("/create", adminControllers.create_get)
 router.post("/create", adminControllers.create_post)
 router.get("/edit/:id", adminControllers.edit_get)
 router.put("/edit/:id", adminControllers.edit_put)
-router.delete("/delete/:id", adminControllers.delete)
+router.get("/delete/:id", adminControllers.delete)
 
 module.exports = router;

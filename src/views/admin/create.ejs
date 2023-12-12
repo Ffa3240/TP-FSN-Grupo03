@@ -1,32 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/index.css">
-    <title>Create</title>
-</head>
+    <%-include("../partials/head")%>
 <body>
-    <header id="idHeader" class="page-header">
-        <!-- Lo carga el template_admin.js -->
-    </header>
+    <%-include("../partials/header_admin")%>
     <main id="create" class="container">
         <h2 class="create__title">CREATE NEW ITEM</h2>
         <form class="create__form" action="/admin/create" method="POST" enctype="application/x-www-form-urlencoded">
             <div class="form__flex">
                 <div class="form__box--flex">
-                    <label class="form__label" for="collection">Category:</label>
+                    <label class="form__label" for="collection">Categoria:</label>
                     <select class="form__select" name="collection" id="collection" required>
-                        <option value="" disabled selected hidden>Select</option>
-                        <option value="Collectable Figures">Collectable Figures</option>
-                        <option value="Key Ring">Key Ring</option>
-                        <option value="T-shirt">T-shirt</option>
+                        <option value="" disabled selected hidden>Seleccionar</option>
+                        <option value="Figuras Coleccionables">Figuras Coleccionables</option>
+                        <option value="Llaveros">Llaveros</option>
+                        <option value="Remeras">Remeras</option>
                     </select>
                 </div>
                 <div class="form__box--flex">
-                    <label class="form__label" for="collection">Licence:</label>
+                    <label class="form__label" for="collection">Licencias:</label>
                     <select class="form__select" name="collection" id="collection" required>
-                        <option value="" disabled selected hidden>Select</option>
+                        <option value="" disabled selected hidden>Seleccionar</option>
                         <option value="starwars">Star Wars</option>
                         <option value="pokemon">Pokemon</option>
                         <option value="harrypotter">Harry Potter</option>
@@ -82,9 +75,7 @@
             </div>
         </form>
     </main>
-    <footer id="idFooter" class="footer">
-        <!-- Lo carga el template_admin.js -->
-    </footer>
-    <script src="../../js/template_admin.js"></script>
+    <%-include("../partials/footer")%>
+    
 </body>
 </html>
