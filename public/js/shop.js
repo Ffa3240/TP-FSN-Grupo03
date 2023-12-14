@@ -16,7 +16,11 @@ function filtrar() {
 
 
     Array.from(document.querySelectorAll('.shop__item')).forEach(
-        (el) => el.classList.remove('shop__item__hide'));
+        (el) => {
+            el.classList.remove('shop__item__hide')
+            el.classList.remove('pagination_hide');
+        }
+        );
 
 
     Array.from(document.querySelectorAll('.shop__item')).forEach(
