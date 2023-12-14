@@ -1,0 +1,84 @@
+
+
+.contactoTitulo {
+    background-color: #e5dfdf !important;
+    text-align: center;
+    font-weight: 600;
+}
+
+.formularioContacto {
+    width: 100%;
+    margin: auto;
+    color: black;
+    font-size: 16px;
+}
+    .formularioContacto input {
+        font-size: 18px;
+    }
+
+.itemsMail-Container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.itemMailTexto {
+    width: 100%;
+}
+
+       .itemMailTexto textarea {
+            width: 100%;
+            padding-left: 5px;
+            border-radius: 3px  ;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+.itemMail {
+    width: 60%;
+    margin-top: 15px;
+}
+
+        .itemMail  input {
+            width: 100%;
+            padding-left: 5px;
+            border-radius: 3px  ;
+}
+
+.itemMailBoton {
+    width: 100%;
+    margin: 15px 0px;
+}
+
+        .itemMailBoton  input {
+            width: 100%;
+            background-color: #282828;
+            color: white;
+        }
+
+
+.itemMail:hover, .itemMailTexto:hover, .itemMailBoton:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+} 
+
+
+@media all and (max-width: 790px) {
+    .formularioContacto {
+      width: 70%;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .formularioContacto {
+      width: 80%;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .formularioContacto {
+        width: 90%;
+      }
+}

@@ -13,6 +13,7 @@ const mainControllers = {
         res.render("home", { title:'Home | FunkoShop', licences:licencesJSON, sliderItems:sliderItems, sliderTitulo: "Ultimos Lanzamientos"})
     },
     contact: (req, res) => res.render("contact", {title: 'Contacto | FunkoShop'}),
+    contactOk: (req, res) => res.render("contactOk", {title: 'Contacto | FunkoShop'}),
     //about: (req, res) => res.send("Route for About View"),
     //faqs: (req, res) => res.send("Route for Faqs View")
 }
