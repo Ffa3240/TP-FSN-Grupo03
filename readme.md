@@ -1,6 +1,6 @@
-<h1 align="center"><Proyecto Integador Funko Shop CAC></h1>
+# Proyecto Integador Funko Shop CAC>
 
-<p align="center"><Tienda de funkos y mas en la cual podras ver, seleccionar y comprar tus articulos favoritos ></p>
+### Tienda de funkos y mas en la cual podras ver, seleccionar y comprar tus articulos favoritos
 
 ## Links
 
