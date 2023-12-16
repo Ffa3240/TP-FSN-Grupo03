@@ -33,8 +33,8 @@ For running the server.
 
 ## Participantes
 
-**Mailen Castellarin**
-**Flavio Altamirano**
-**Rosa Gisela Aballay**
-**Leandro Agustin Ramirez**
-**Candela Di Genova**
+- **Mailen Castellarin**
+- **Flavio Altamirano**
+- **Rosa Gisela Aballay**
+- **Leandro Agustin Ramirez**
+- **Candela Di Genova**
