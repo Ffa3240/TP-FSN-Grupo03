@@ -1,0 +1,71 @@
+
+
+.contactoTitulo {
+    background-color: #e5dfdf !important;
+}
+
+.msgMailConfirmado {
+    width: 40%;
+    margin: auto;
+    background-color: rgb(230, 228, 228);
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+    margin-top: 10vh;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+    font-size: 16px;
+}
+
+            @keyframes myAnim {
+                0% {transform: scale3d(0, 0, 1);
+                background-color: black;}
+                100% {transform: scale3d(1, 1, 1);}
+            }
+
+
+
+.msgMailConfirmado b {
+    margin-bottom: .5rem;
+}
+
+.msgMailConfirmado a {
+    margin: 10px 0px 10px 0px;
+    text-decoration: none;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+
+    /*background-color: rgb(207, 207, 211);
+    color: black;*/
+    background-color: #282828;
+    color: white;
+}
+
+
+.msgMailConfirmado a:hover {
+    background-color: rgb(83, 83, 83);
+}
+
+
+@media all and (max-width: 790px) {
+    .msgMailConfirmado {
+      width: 50%;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .msgMailConfirmado {
+      width: 65%;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .msgMailConfirmado {
+        width: 80%;
+      }
+}
